@@ -1,4 +1,4 @@
-require 'cabybara/cucumber'
+require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'site_prism'
 require_relative 'helper.rb'
@@ -7,7 +7,7 @@ require_relative 'page_helper.rb'
 ENVIRONMENT = ENV['ENVIRONMENT']
 
 puts "Ambiente >> #{ENVIRONMENT}"
-CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environments/#{ENVIRONMENT}")
+CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environments/#{ENVIRONMENT}.yml")
 
 World(Helper)
 World(Pages)

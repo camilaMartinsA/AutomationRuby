@@ -3,6 +3,6 @@ module Helper
         file_path = "report/screenshots/tests_#{result}"
         screenshots = "#{file_path}/#{file_name}.png"
         page.save_screenshot(screenshots)
-        attach(screenshots, 'image/png', 'Abrir evidência!')
+        attach(screenshots, 'image/png')
     end
 end

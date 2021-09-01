@@ -1,6 +1,6 @@
 #language: pt
 Funcionalidade: Login
-
+@login
 Cenario: Efetuar login com sucesso
 
 Dado que eu esteja na pagina de login
